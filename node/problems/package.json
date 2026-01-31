@@ -1,0 +1,13 @@
+{
+  "name": "problems",
+  "version": "1.0.0",
+  "description": "",
+  "main": "RGB.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "amr",
+  "license": "ISC",
+  "type": "module"
+}

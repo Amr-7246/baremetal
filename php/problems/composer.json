@@ -1,0 +1,18 @@
+{
+    "name": "vendor/problems",
+    "description": "just a helper package to wrappe my problem solving implmintation",
+    "version": "1.0.0",
+    "authors": [{
+        "name": "amr",
+        "email": "aehab7246@gmail.com",
+        "role": "fullstack developer"
+    }],
+    "autoload": {
+        "files": [
+            "src/functions.php"
+        ],
+        "psr-4": {
+
+        }
+    }
+}
