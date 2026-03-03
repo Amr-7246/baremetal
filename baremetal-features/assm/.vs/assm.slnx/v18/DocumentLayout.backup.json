@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Programming\\baremetal\\baremetal-features\\assm\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D4C88E0F-3AD8-4F5A-A594-8F2F7A3CFD73}|assm.vcxproj|E:\\Programming\\baremetal\\baremetal-features\\assm\\init.asm||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{D4C88E0F-3AD8-4F5A-A594-8F2F7A3CFD73}|assm.vcxproj|solutionrelative:init.asm||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "init.asm",
+              "DocumentMoniker": "E:\\Programming\\baremetal\\baremetal-features\\assm\\init.asm",
+              "RelativeDocumentMoniker": "init.asm",
+              "ToolTip": "E:\\Programming\\baremetal\\baremetal-features\\assm\\init.asm",
+              "RelativeToolTip": "init.asm",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-03-03T23:43:52.524Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
