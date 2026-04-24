@@ -1,0 +1,19 @@
+Task	                   Focus	                      Deliverable
+---
+1	Project setup + config + DB connection	App starts, loads .env, connects to Postgres
+2	Migrations + User repository	        Users table created, CRUD operations
+3	Domain + Service layer	Business        logic separated from DB
+4	Handlers + Routing	                    API endpoints work (register/login)
+5	Middleware + Auth protection	        JWT auth, protected routes
+6	Task management + Transactions         	Create tasks, assign to users, use DB transactions
+---
+
+## Structure 
+taskflow/
+├── main.go    # Entry point, config loading, server start
+├── config/
+│   └── config.go  # Typed config struct + env loading
+├── helper/
+│   └── logger/logger.go   # the global logging
+├── repository/
+│   └── repository.go    # the DB global connection
