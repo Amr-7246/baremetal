@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vanilla Chat App</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="container">
+            <!-- Login form -->
+                <div id="login-container" class="login-container">
+                    <div class="login-box">
+                        <h1>Welcome to Chat</h1>
+                        <p>Enter a username to join the conversation</p>
+                        <form id="login-form">
+                            <input  type="text" 
+                                    id="username" 
+                                    placeholder="Username (e.g., JohnDoe)" 
+                                    maxlength="50" 
+                                    required >
+                            <button type="submit">Join Chat</button>
+                            <div id="login-error" class="error-message"></div>
+                        </form>
+                    </div>
+                </div>
+            <!-- Chat area -->
+                <div id="chat-container" class="chat-container hidden">
+                    <div class="chat-header">
+                        <h2>Chat Room</h2>
+                        <div class="user-info">
+                            Logged in as: <span id="current-username"></span>
+                        </div>
+                    </div>
+                    
+                    <div id="messages-container" class="messages-container">
+                        <!-- Messages will be inserted here -->
+                    </div>
+                    
+                    <div class="message-input-container">
+                        <form id="message-form">
+                            <input type="text" 
+                                id="message-input" 
+                                placeholder="Type your message..." 
+                                maxlength="500" 
+                                autocomplete="off">
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+        </div>
+        <script src="./chat.js" type="module"></script>
+    </body>
+</html>

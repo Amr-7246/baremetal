@@ -1,0 +1,49 @@
+# TASKS
+## Phase 1: Foundation (Database & Config)
+    Create MySQL database chat_app + Execute schema SQL for users and messages tables
+    Create config/database.php with PDO connection + Write escape() helper function (htmlspecialchars wrapper)
+
+## Phase 2: User Entry Point
+    Build index.html with username form and chat container (initially hidden)
+    Create api/login.php - validates username (no password), creates session
+    Add JavaScript to show chat UI after login success
+
+## Phase 3: Message Display & History
+    Create api/history.php - returns last 50 messages JSON
+    Write JS loadHistory() - fetches and displays messages
+    Create style.css - chat bubbles, scrollable container
+
+## Phase 4: Sending Messages
+    Create api/send.php - expects POST {message}, inserts into DB
+    Add message form to HTML with event listener + Write JS sendMessage() - POST to API, clear input
+    Optimistic update: Add message to UI immediately, fallback on error
+
+## Phase 5: Real-time Polling (Core Concept)
+    Create api/poll.php - takes last_id param
+    Logic: Query for messages > last_id, loop with usleep until found or timeout
+    Write JS startPolling(lastMessageId) - recursive function
+    Handle empty responses (no new messages)
+    Add error handling with retry delay
+
+## Phase 6: Polish & Edge Cases
+    Auto-scroll to bottom on new messages
+    Typing indicator (basic: on keypress → save to session, poll returns indicator)
+    "User is typing..." (add typing_users table + cleanup cron)
+    Disconnect detection (polling failure → show reconnecting)
+    Rate limiting on send.php (max 5 messages per 10 seconds)
+---
+# Structure 
+chat/
+├── index.html          # Main chat interface
+├── style.css           # Basic styling
+├── js/
+│   └── chat.js        # All frontend logic
+├── api/
+│   ├── login.php      # Set session
+│   ├── send.php       # POST new message
+│   ├── poll.php       # Long poll for new messages
+│   └── history.php    # Get last 50 messages
+├── config/
+│   └── database.php   # DB connection
+└── sql/
+    └── setup.sql      # Database schema
